@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 # Capybara gem
 gem 'capybara'
 
+# selenium gem
+gem 'selenium-webdriver'
+
 # RSpec gem
 gem 'rspec-rails'
 

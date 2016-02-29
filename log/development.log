@@ -1353,3 +1353,342 @@ Processing by ItemsController#index as HTML
   [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
   Rendered items/index.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 00:38:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 1910ms (Views: 1891.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-29 00:38:06 +0100
+
+
+Started GET "/assets/scaffolds.self-aec0e988731372010523d5182442484f8ead07aba9709a7b391b270604176d23.css?body=1" for 127.0.0.1 at 2016-02-29 00:38:06 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 00:38:06 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-29 00:38:06 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-29 00:38:06 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-29 00:38:06 +0100
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-29 00:38:06 +0100
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-02-29 00:38:06 +0100
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 00:38:42 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (22.4ms)
+  Rendered items/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 99ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 00:40:36 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZXh50ZjUPGqpHoFl+92uB9WIxZ6ucy6/0bbQQLhwEzVMapc/IRsuyiU/+iCUFgTmNNgW73B+hYje1WVr3xl3+A==", "item"=>{"name"=>"jhkh", "description"=>"kjh"}, "commit"=>"Create Item"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "jhkh"], ["description", "kjh"], ["created_at", "2016-02-28 23:40:36.531183"], ["updated_at", "2016-02-28 23:40:36.531183"]]
+  [1m[36m (25.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items/10
+Completed 302 Found in 35ms (ActiveRecord: 27.4ms)
+
+
+Started GET "/items/10" for 127.0.0.1 at 2016-02-29 00:40:36 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered items/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 00:47:25 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 301ms (Views: 284.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 00:56:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (15.3ms)
+  Rendered items/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 295ms (Views: 276.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 01:05:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 338ms (Views: 321.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 01:16:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 358ms (Views: 334.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-29 01:16:20 +0100
+
+
+Started GET "/assets/scaffolds.self-aec0e988731372010523d5182442484f8ead07aba9709a7b391b270604176d23.css?body=1" for 127.0.0.1 at 2016-02-29 01:16:20 +0100
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-29 01:16:20 +0100
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-02-29 01:16:20 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 01:16:20 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-29 01:16:20 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-29 01:16:20 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-29 01:16:20 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 01:21:31 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-29 01:21:32 +0100
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-29 01:21:32 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-29 01:21:32 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-29 01:21:32 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-29 01:21:32 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 01:21:32 +0100
+
+
+Started GET "/assets/scaffolds.self-aec0e988731372010523d5182442484f8ead07aba9709a7b391b270604176d23.css?body=1" for 127.0.0.1 at 2016-02-29 01:21:32 +0100
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-02-29 01:21:32 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+
+
+Started GET "/assets/scaffolds.self-aec0e988731372010523d5182442484f8ead07aba9709a7b391b270604176d23.css?body=1" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-02-29 01:24:07 +0100
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:24:08 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (27.1ms)
+  Rendered items/new.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:24:38 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (1.7ms)
+  Rendered items/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+
+
+Started GET "/assets/scaffolds.self-aec0e988731372010523d5182442484f8ead07aba9709a7b391b270604176d23.css?body=1" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:25:26 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (2.1ms)
+  Rendered items/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+
+
+Started GET "/assets/scaffolds.self-aec0e988731372010523d5182442484f8ead07aba9709a7b391b270604176d23.css?body=1" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-02-29 01:25:50 +0100
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:25:51 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (5.6ms)
+  Rendered items/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 01:25:52 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J8a0BtugOO6kCcJ3f/3uUBc8T50de50n5vR7jlInLwraOgGna/qBmNjXIsVpYeUsHDFlSqhZHNz/qxRLszky9Q==", "item"=>{"name"=>"the name", "description"=>"the desciption"}, "commit"=>"Create Item"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.3ms)[0m  INSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "the name"], ["description", "the desciption"], ["created_at", "2016-02-29 00:25:52.233165"], ["updated_at", "2016-02-29 00:25:52.233165"]]
+  [1m[36m (40.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items/11
+Completed 302 Found in 57ms (ActiveRecord: 47.6ms)
+
+
+Started GET "/items/11" for 127.0.0.1 at 2016-02-29 01:25:52 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+
+
+Started GET "/assets/scaffolds.self-aec0e988731372010523d5182442484f8ead07aba9709a7b391b270604176d23.css?body=1" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-02-29 01:27:05 +0100
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:27:06 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (1.8ms)
+  Rendered items/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 01:27:06 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j23XWBgZ6UohTBymhzKNME/lsHG7SfNi4GyN5RXQGFKWU1j14Tkc2cufhN9nuFFmjgtLWMzKZBU939hb5Ozlgg==", "item"=>{"name"=>"the name", "description"=>"the desciption"}, "commit"=>"Create Item"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "the name"], ["description", "the desciption"], ["created_at", "2016-02-29 00:27:06.715425"], ["updated_at", "2016-02-29 00:27:06.715425"]]
+  [1m[35m (50.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/items/12
+Completed 302 Found in 55ms (ActiveRecord: 50.4ms)
+
+
+Started GET "/items/12" for 127.0.0.1 at 2016-02-29 01:27:06 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered items/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.1ms)

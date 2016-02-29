@@ -15,3 +15,111 @@
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-02-29 00:55:20 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 304ms (Views: 290.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 00:57:28 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (15.1ms)
+  Rendered items/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 311ms (Views: 293.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 00:58:37 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (15.0ms)
+  Rendered items/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 315ms (Views: 289.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:01:56 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (15.1ms)
+  Rendered items/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 320ms (Views: 293.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:02:17 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (15.1ms)
+  Rendered items/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 321ms (Views: 294.8ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:03:17 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (15.0ms)
+  Rendered items/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 310ms (Views: 292.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-02-29 01:29:13 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 323ms (Views: 310.1ms | ActiveRecord: 0.3ms)
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 01:29:14 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (18.6ms)
+  Rendered items/new.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+Started POST "/items" for 127.0.0.1 at 2016-02-29 01:29:14 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "item"=>{"name"=>"the name", "description"=>"the desciption"}, "commit"=>"Create Item"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "the name"], ["description", "the desciption"], ["created_at", "2016-02-29 00:29:14.193434"], ["updated_at", "2016-02-29 00:29:14.193434"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/items/1
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+Started GET "/items/1" for 127.0.0.1 at 2016-02-29 01:29:14 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 13ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
