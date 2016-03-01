@@ -1,4 +1,4 @@
-# Xing interview test
+# Rails interview test
 
 ## WIP- rspec and capybara tests ###
 
