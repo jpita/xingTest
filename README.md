@@ -21,7 +21,8 @@
 * destroy item
 
 #### Notes
-* Tried to use native capybara functions but couldn’t click the buttons
+* Tried to use native capybara functions but couldn’t click the buttons, resorted to selenium webdriver functions
+
 #### Main issues
 * A lot of time lost to setup the environment
 	* First on my old windows machine, somethins don't work on windows
