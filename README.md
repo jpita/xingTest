@@ -22,3 +22,11 @@
 
 #### Notes
 * Tried to use native capybara functions but couldn’t click the buttons
+#### Main issues
+* A lot of time lost to setup the environment
+	* First on my old windows machine, somethins don't work on windows
+	* Then on an Ubuntu VM, everything was super slow
+	* Then installed Ubuntu on the PC, ran into some issues with network drivers
+	* Finally was able to make it work
+* Due to lack of knowledge of a Rails application, Ruby itself and zero knowledge of Rspec, was hard to start having results
+* Due to zero knowledge of Capybara, was really hard to start having results, specially with headless drivers (didn't know where the application instance was running to check the current status)
