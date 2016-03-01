@@ -5,6 +5,8 @@ gem 'capybara'
 # selenium gem
 gem 'selenium-webdriver'
 
+gem 'pry'
+
 # RSpec gem
 gem 'rspec-rails'
 

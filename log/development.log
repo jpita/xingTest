@@ -1692,3 +1692,479 @@ Processing by ItemsController#show as HTML
   [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 12]]
   Rendered items/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 18:10:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (49.7ms)
+  Rendered items/new.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 1305ms (Views: 1248.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-29 18:10:42 +0100
+
+
+Started GET "/assets/scaffolds.self-6a869abbaa7e94be55284d9424ce11d3d8ca82363421058b4e226badd0f91f59.css?body=1" for 127.0.0.1 at 2016-02-29 18:10:42 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-29 18:10:42 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-29 18:10:42 +0100
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-29 18:10:42 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 18:10:42 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-29 18:10:42 +0100
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2016-02-29 18:10:42 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 18:10:47 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 127ms (Views: 97.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/items/8" for 127.0.0.1 at 2016-02-29 18:11:13 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cLV2lW2uuzJpj1RpPXpmN/2aUcDgBkUvATe/gWRoR6RZp5h71GGpkuWuLyxSsczWHMqCsT4L7hgOVAqqAwEjaQ==", "id"=>"8"}
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 8]]
+  [1m[35m (32.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/items
+Completed 302 Found in 66ms (ActiveRecord: 33.5ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:11:13 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/items/9" for 127.0.0.1 at 2016-02-29 18:11:16 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"udd9H1gcA89UTVBcE243fGS6P1TYW0y5FXdQGdwqprCQxZPx4dMRb9hsKxl8pZ2dhersJQZW544aFOUyu0PCfQ==", "id"=>"9"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "items" WHERE "items"."id" = ?  [["id", 9]]
+  [1m[36m (31.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items
+Completed 302 Found in 43ms (ActiveRecord: 32.2ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:11:16 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 83ms (Views: 80.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/items/10" for 127.0.0.1 at 2016-02-29 18:11:19 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kjrSVucTtFcoFRF8UdbXGGttQxcFU0pyU83v0lppgti7KDy4Xtym96Q0ajk+HX35ij2QZtte4UVcrlr5PQDmFQ==", "id"=>"10"}
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 10]]
+  [1m[35m (23.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/items
+Completed 302 Found in 36ms (ActiveRecord: 25.7ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:11:19 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/items/11" for 127.0.0.1 at 2016-02-29 18:11:21 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rD3h48Ebev/oGTWY3VOBbxB032NuaR0Np/apDokfS/2FLw8NeNRoX2Q4Tt2ymCuO8SQMErBktjqolRwl7nYvMA==", "id"=>"11"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = ?  [["id", 11]]
+  [1m[36m (22.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items
+Completed 302 Found in 31ms (ActiveRecord: 23.2ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:11:21 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.9ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 81ms (Views: 78.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/items/12" for 127.0.0.1 at 2016-02-29 18:11:28 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xW0ZSPm6N/1YWYcoRIZ01bHMOIMhfchFkiLVKOEU4cXsf/emQHUlXdR4/G0rTd40UJzr8v9wY3KdQWADhn2FCA==", "id"=>"12"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 12]]
+  [1m[35m (20.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/items
+Completed 302 Found in 43ms (ActiveRecord: 24.5ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:11:29 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:11:56 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 18:12:25 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (8.6ms)
+  Rendered items/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 62ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 18:12:36 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/kAE+0RTcPuOFX7ALJo8AK1dn7hgEUBLdCCJ+Y+F7/rXUuoV/ZxiWwI0BYVDUZbhTA1Myb4c63x7QzzS6OyLNw==", "item"=>{"name"=>"the name", "description"=>"the description"}, "commit"=>"Create Item"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "the name"], ["description", "the description"], ["created_at", "2016-02-29 17:12:36.666865"], ["updated_at", "2016-02-29 17:12:36.666865"]]
+  [1m[36m (27.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items/13
+Completed 302 Found in 43ms (ActiveRecord: 28.2ms)
+
+
+Started GET "/items/13" for 127.0.0.1 at 2016-02-29 18:12:36 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered items/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 92ms (Views: 87.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:12:40 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 18:14:43 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (5.6ms)
+  Rendered items/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 18:14:44 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6F9FQXbOE7Q0e2yPv/3B9EnK3WT/Rlu0ioD8ZYzIgdjBTauvzwEBFLhaF8rQNmsVqJoOFSFL8IOF40lO66HlFQ==", "item"=>{"name"=>"", "description"=>""}, "commit"=>"Create Item"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2016-02-29 17:14:44.858195"], ["updated_at", "2016-02-29 17:14:44.858195"]]
+  [1m[35m (14.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/items/14
+Completed 302 Found in 45ms (ActiveRecord: 15.1ms)
+
+
+Started GET "/items/14" for 127.0.0.1 at 2016-02-29 18:14:44 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered items/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 116ms (Views: 111.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:14:47 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/items/13" for 127.0.0.1 at 2016-02-29 18:31:17 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TGbxPCV+3vejYLZYXkLJGBt4B+sSUD21VmGaQ/bjB4JldB/SnLHMVy9BzR0xiWP5+ijUmsxdloJZAi9okYpjTw==", "id"=>"13"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (1.3ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 13]]
+  [1m[35m (33.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/items
+Completed 302 Found in 51ms (ActiveRecord: 36.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:31:17 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 85ms (Views: 64.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/items/14" for 127.0.0.1 at 2016-02-29 18:31:20 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xs/FOw7AaAzh4zpEB+ZVP6R+8pDbeRK7YBMP1CZUFGLv3SvVtw96rG3CQQFoLf/eRS4h4QV0uYxvcLr/QT1wrw==", "id"=>"14"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = ?  [["id", 14]]
+  [1m[36m (41.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items
+Completed 302 Found in 54ms (ActiveRecord: 43.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:31:20 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:34:12 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 66ms (Views: 63.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:34:39 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 18:34:41 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (4.7ms)
+  Rendered items/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 18:34:43 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2UMEdhKyTrK0KEvmlTImDEUcy6JRv82n9KHC8NcDQ1HwUeqYq31cEjgJMKP6+YztpEwY04+yZpD7wnfbsGonnA==", "item"=>{"name"=>"", "description"=>""}, "commit"=>"Create Item"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2016-02-29 17:34:43.298800"], ["updated_at", "2016-02-29 17:34:43.298800"]]
+  [1m[36m (23.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items/15
+Completed 302 Found in 60ms (ActiveRecord: 29.8ms)
+
+
+Started GET "/items/15" for 127.0.0.1 at 2016-02-29 18:34:43 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 15]]
+  Rendered items/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:34:46 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/items/15" for 127.0.0.1 at 2016-02-29 18:35:10 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8N8xq450VZjH1PThEswXk26eb+3i0DSkGQB+c+cIwyzZzd9FN7tHOEv1j6R9B71yj868nDzdn5MWY8tYgGGn4Q==", "id"=>"15"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = ?  [["id", 15]]
+  [1m[36m (18.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items
+Completed 302 Found in 40ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:35:10 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 170ms (Views: 157.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 18:36:45 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (4.9ms)
+  Rendered items/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 18:36:46 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whZdR7i1fTuk6Nm+h0cZOYDEC5xYuyBmi+sdDgZOe3frBLOpAXpvmyjJovvojLPYYZTY7Ya2i1GEiKglYScfug==", "item"=>{"name"=>"", "description"=>""}, "commit"=>"Create Item"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2016-02-29 17:36:46.958581"], ["updated_at", "2016-02-29 17:36:46.958581"]]
+  [1m[36m (29.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items/16
+Completed 302 Found in 51ms (ActiveRecord: 33.7ms)
+
+
+Started GET "/items/16" for 127.0.0.1 at 2016-02-29 18:36:47 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered items/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 92ms (Views: 88.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:36:49 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:46:44 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 1019ms (Views: 972.5ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/items/16" for 127.0.0.1 at 2016-02-29 18:46:52 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JGUdC4aSYxN63Y+O2PLiU2omA2DwgUqp2Ktk8tGVuUwNd/PlP11xs/b89Mu3OUiyi3bQES6M4Z7XyNHZtvzdgQ==", "id"=>"16"}
+  [1m[36mItem Load (3.7ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 16]]
+  [1m[35m (36.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/items
+Completed 302 Found in 113ms (ActiveRecord: 40.8ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:46:53 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 120ms (Views: 117.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 18:46:54 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (115.8ms)
+  Rendered items/new.html.erb within layouts/application (141.9ms)
+Completed 200 OK in 240ms (Views: 238.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 18:46:56 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qeOtTDCvCftZvQ7xQmb6nINph0UFuboExw1OipVMse6A8UOiiWAbW9WcdbQtrVB9YjlUNNu0ETPIbvuh8iXVIw==", "item"=>{"name"=>"", "description"=>""}, "commit"=>"Create Item"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2016-02-29 17:46:56.762565"], ["updated_at", "2016-02-29 17:46:56.762565"]]
+  [1m[35m (24.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/items/17
+Completed 302 Found in 52ms (ActiveRecord: 26.9ms)
+
+
+Started GET "/items/17" for 127.0.0.1 at 2016-02-29 18:46:56 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered items/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 97ms (Views: 93.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 18:49:00 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2016-02-29 19:03:36 +0100
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (5.1ms)
+  Rendered items/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2016-02-29 19:03:37 +0100
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NC6IH8/h/TG3gObhxXdELjhZoAvy7i1b/wg1lAvCV94dPGbxdi7vkTuhnaSqvO7P2Qlzeizjhmzwa4C/bKszEw==", "item"=>{"name"=>"", "description"=>""}, "commit"=>"Create Item"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "items" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2016-02-29 18:03:37.941189"], ["updated_at", "2016-02-29 18:03:37.941189"]]
+  [1m[36m (29.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items/18
+Completed 302 Found in 47ms (ActiveRecord: 31.1ms)
+
+
+Started GET "/items/18" for 127.0.0.1 at 2016-02-29 19:03:38 +0100
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 18]]
+  Rendered items/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-02-29 19:03:40 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-01 23:28:01 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 475ms (Views: 458.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.self-6a869abbaa7e94be55284d9424ce11d3d8ca82363421058b4e226badd0f91f59.css?body=1" for 127.0.0.1 at 2016-03-01 23:28:01 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-01 23:38:04 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/items/17" for 127.0.0.1 at 2016-03-01 23:38:08 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AL4O6xhx0uhuSAYrwy7hWfSls8WTgUu/l425yx0GDrUprOAFob7ASOJpfW6s5Uu4FfVgtE2M4IiY7gzgem9qeA==", "id"=>"17"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "items" WHERE "items"."id" = ?  [["id", 17]]
+  [1m[36m (25.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items
+Completed 302 Found in 58ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-03-01 23:38:08 +0100
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/items/18" for 127.0.0.1 at 2016-03-01 23:38:10 +0100
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6YaFUEPUKRNMxDrO+0AHEcMlqdqbXgP42+xNRfe6cbnAlGu++hs7s8DlQYuUi63wInV6q0VTqM/Uj/hukNMVdA==", "id"=>"18"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 18]]
+  [1m[35m (32.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/items
+Completed 302 Found in 38ms (ActiveRecord: 33.4ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2016-03-01 23:38:10 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.7ms)
