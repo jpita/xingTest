@@ -14,11 +14,11 @@
 	* (http://rails-sqli.org/)
 
 ### Test cases
-new item
-edit item
-show item
-show all items
-destroy item
+* new item
+* edit item
+* show item
+* show all items
+* destroy item
 
 #### Notes
-Tried to use native capybara functions but couldn’t click the buttons
+* Tried to use native capybara functions but couldn’t click the buttons
