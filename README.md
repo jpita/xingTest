@@ -1,6 +1,12 @@
 # Rails interview test
 
 ## WIP- rspec and capybara tests ###
+* Done:
+	* Capybara (automatic functional tests)
+		* Create item
+		* Delete item
+	* Rspec (unit tests)
+		* Create item 
 
 ### Random findings
 - after destroying the first item, (http://localhost:3000/items/1) goes to error page, should have a redirection to “items” page or have a nice “item not found” page
