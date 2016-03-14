@@ -1,13 +1,5 @@
 # Rails interview test
 
-## WIP- rspec and capybara tests ###
-* Done:
-	* Capybara (automatic functional tests)
-		* Create item
-		* Delete item
-	* Rspec (unit tests)
-		* Create item 
-
 ### Random findings
 - after destroying the first item, (http://localhost:3000/items/1) goes to error page, should have a redirection to “items” page or have a nice “item not found” page
 - after destroying the only item, next item created has index 2 instead of 1, is this expected?
@@ -31,9 +23,12 @@
 
 #### Main issues
 * A lot of time lost to setup the environment
-	* First on my old windows machine, somethins don't work on windows
+	* First on my old windows machine, some things don't work on windows
 	* Then on an Ubuntu VM, everything was super slow
 	* Then installed Ubuntu on the PC, ran into some issues with network drivers
 	* Finally was able to make it work
 * Due to lack of knowledge of a Rails application, Ruby itself and zero knowledge of Rspec, was hard to start having results
 * Due to zero knowledge of Capybara, was really hard to start having results, specially with headless drivers (didn't know where the application instance was running to check the current status)
+
+# Final Thoughts
+* Took way too much time (around 25h) to solve the test due to all the dificulties of never having hands on experience with the technologies involved (had a little knowledge of how a rails app works and that saved me even more time)

@@ -18,6 +18,8 @@ RSpec.describe Item, type: :model do
 
 	it "the item should be destroyed"do
 		@item.destroy
+    Item.delete(1)
+    Item.delete_all
 		expect(Item.count).to eq(0)
 		@item=nil
 	end    
