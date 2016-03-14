@@ -1,4 +1,7 @@
 # Rails interview test
+### How to run the tests
+* rspec spec/features/items_spec.rb for capybara tests
+* rspec spec/models/item_spec.rb for unit tests
 
 ### Random findings
 - after destroying the first item, (http://localhost:3000/items/1) goes to error page, should have a redirection to “items” page or have a nice “item not found” page
