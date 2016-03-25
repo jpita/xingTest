@@ -1,0 +1,6 @@
+{
+  "template": "rails", 
+  "name": "Rails Testing",
+  "logo": "https://www.dropbox.com/s/r6l3p1e68pgd1u0/Drawing.png",
+  "description": "Rails simple application with unit and functional tests using capybara and RSpec"
+}
